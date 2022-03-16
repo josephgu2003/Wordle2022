@@ -1,0 +1,4 @@
+Wordle is a word guessing game where the user attempts to guess the secret word within a specified word limit . 
+After guessing a valid word, each letter lights up either green, yellow, or gray: green signifies that the letter is both correct and in the correct position, yellow signifies that the letter is contained in the word, but it is not in the right position, and gray signifies that the letter is not in the word. 
+After typing in the word, the user must hit enter to check whether the word is in the database. If it is, it will be submitted and displayed with its corresponding colors. 
+The user can also hit backspace to delete letters in the current row, but they cannot delete previous rows that have already been submitted. 

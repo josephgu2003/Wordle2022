@@ -1,0 +1,51 @@
+WORLDS:
+
+Wordle : the World that is the Wordle game and it's state
+
+Dordle : the World that is the Dordle game containing two Wordle Worlds inside
+
+
+FUNCTION OBJECTS:
+
+StringEquality : tests if two Strings are equal
+
+Zipper : zips two args into a pair
+
+Draw : for drawing a row or stack of rows
+
+GetCorrectColor : takes two booleans describing how a letter compares to the secret word,
+returns the color we should render it
+
+ReplaceWhenTrue : replaces the given string if the given boolean is true, otherwise it will return the given string, unchanged.
+
+LISTS:
+
+IList<T> : generic list, containing operations such as map2, foldr, sameList, etc.
+
+Cons<T> : the non empty IList<T>
+
+Empty<T> : the empty case of IList<T>
+
+INTERFACES:
+
+IPred<T> : represents a predicate (returns true/false depending on the input)
+
+IFunc<A, R> : represents a unary function
+
+IFunc2<A1, A2, R> : represents a two-ary function
+
+IFunc3<A1, A2, A3, R> : represents a three-ary function
+
+UTILITY:
+
+WordList : contains two large dictionaries of English words, and houses the 
+split(String, int, int) method that allows us to split strings into IList<String>
+
+Util : holds all "functions" that don't belong to any one class
+	drawSquare : draws a square
+	drawSquare : draws a square using the specified String letter and Color.
+	addBlock : adds the block to the beginning of the rest (with a buffer in between)
+	addLettersToEnd : adds "val" to the end of cur "add" number of times.
+	drawRowOfDisabledSquares : draws a row of disabled squares
+	completeRowCurrentGuess : completes the current guess and prints out the row
+	drawRow : draws the row given a row of letters and the secret word
